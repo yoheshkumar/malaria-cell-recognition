@@ -22,6 +22,10 @@ Write your own steps
 
 ## PROGRAM
 
+### Name:
+
+### Register Number:
+
 Include your code here
 
 ## OUTPUT
