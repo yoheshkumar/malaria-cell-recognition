@@ -162,6 +162,7 @@ model.save('cell_model.h5')
 
 ### Plot graphs:
 ```python
+print("YOHESH KUMAR R.M\n212222240118")
 losses = pd.DataFrame(model.history.history)
 losses[['loss','val_loss']].plot()
 model.metrics_names
@@ -186,6 +187,7 @@ img  = tf.convert_to_tensor(np.asarray(p_img))
 img = tf.image.resize(img,(130,130))
 img=img.numpy()
 pred=bool(model.predict(img.reshape(1,130,130,3))<0.5 )
+print("YOHESH KUMAR R.M\n212222240118")
 plt.title("Model prediction: "+("Parasitized" if pred  else "Un Infected")
 			+"\nActual Value: "+str(dir_))
 plt.axis("off")
@@ -196,7 +198,7 @@ plt.show()
 ## OUTPUT
 
 ### Training Loss, Validation Loss Vs Iteration Plot
-![image](https://github.com/yoheshkumar/malaria-cell-recognition/assets/119393568/76939681-c6be-4b30-8a07-0617e8df01ca)
+![image](https://github.com/yoheshkumar/malaria-cell-recognition/assets/119393568/ca61f020-6bff-4fe9-9b1b-2b2b50445d66)
 
 ### Classification Report
 ![image](https://github.com/yoheshkumar/malaria-cell-recognition/assets/119393568/6da2fa00-0b2e-4a72-adc0-6bc1570856d6)
@@ -205,7 +207,7 @@ plt.show()
 ![image](https://github.com/yoheshkumar/malaria-cell-recognition/assets/119393568/6ed940da-189e-40de-b014-b3817a5853dc)
 
 ### New Sample Data Prediction
-![image](https://github.com/yoheshkumar/malaria-cell-recognition/assets/119393568/0ae23b64-bdcb-4c71-b18b-79cb33d9244a)
+![image](https://github.com/yoheshkumar/malaria-cell-recognition/assets/119393568/18ac43ce-8d6a-4082-9ed7-0861d86a18d7)
 
 ## RESULT:
 The model's performance is evaluated through training and testing, and it shows potential for assisting healthcare professionals in diagnosing malaria more efficiently and accurately.
